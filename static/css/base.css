@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: salmon;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: lightcoral;
+    color: lightgrey;
+    box-shadow: 0 4px 6px 0 rgb(129, 73, 73), 0 6px 20px 0 rgb(153, 89, 89);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav div a {
+    margin: 0 10px;
+}
+
+div.main {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.main>div {
+    width: 250px;
+    padding: 25px;
+    background-color: saddlebrown;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+div.main>div>p,
+div.main>div>input:not(input[type='checkbox']) {
+    padding: 5px;
+    width: 100%;
+    background-color: rgb(109, 55, 16);
+    color: antiquewhite;
+    /* text-align: center; */
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 15px auto 10px auto;
+}

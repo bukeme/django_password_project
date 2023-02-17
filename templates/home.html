@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %} {% for password in object_list %}
+<div>
+    <h2>{{password.name}}</h2>
+    <img class="icon" src="{{password.logo}}" alt="">
+    <p>{{password.url}}</p>
+    <input id="email{{password.id}}" type="password" value="{{password.email}}" disabled title="click to copy"><br>
+    <input type="checkbox" onclick="togglePassword('email{{password.id}}')"> Show Email
+    <input id="password{{password.id}}" type="password" value="{{password.password}}" disabled title="click to copy"><br>
+    <input type="checkbox" onclick="togglePassword('password{{password.id}}')"> Show Password
+</div>
+{% endfor %} {% endblock content %}
